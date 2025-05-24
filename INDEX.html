@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Портфолио Матвея Комарова</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-wrapper">
+      <nav>
+        <a href="http://ya.ru">Главная</a>
+        <a href="http://ya.ru">О нас</a>
+        <a href="http://ya.ru">Галерея</a>
+        <a href="http://ya.ru">Контакты</a>
+        <a href="animation.html" target="_blank">Анимация</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="main_section">
+      <div class="main_div">
+        <img src="img/2.jpg" alt="Аватар Матвея" class="avatar">
+        <h1>Матвей Комаров</h1>
+
+        <p>Привет! Я учусь программировать и создавать модели в Blender. Здесь мои работы!</p>
+      </div>
+    </section>
+
+    <section class="cardscontainer">
+      <div class="cards">
+        <div class="cards_background" style="background-image: url('img/1.jpg');"></div>
+        <h2>3D-модель в Blender</h2>
+        <p>Моя первая модель в Blender.</p>
+        <button onclick="window.open('model.html', '_blank')">Открыть 3D-модель</button>
+      </div>
+      <div class="cards">
+        <div class="cards_background" style="background-image: url('img/1.jpg');"></div>
+        <h2>Мой проект 2</h2>
+        <p>Описание проекта 2.</p>
+        <button>Подробнее</button>
+      </div>
+      <div class="cards">
+        <div class="cards_background" style="background-image: url('img/1.jpg');"></div>
+        <h2>Мой проект 3</h2>
+        <p>Описание проекта 3.</p>
+        <button>Подробнее</button>
+      </div>
+      <!-- добавить остальные карточки аналогично -->
+    </section>
+
+    <section class="form_section">
+      <form id="myForm">
+        <h3>Оставьте заявку</h3>
+        <label>Фамилия
+          <input type="text" name="surname" placeholder="Иванов" required>
+        </label>
+        <label>Имя
+          <input type="text" name="name" placeholder="Иван" required>
+        </label>
+        <label>Почта
+          <input type="email" name="email" placeholder="example@mail.com" required>
+        </label>
+        <label>Телефон
+          <input type="tel" name="tel" placeholder="+7(___)__-__" required>
+        </label>
+        <label>Услуга
+          <select name="service">
+            <option>Создание сайта</option>
+            <option>Написание программы</option>
+            <option>Создание 3D-модели</option>
+            <option>Другое</option>
+          </select>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="agree" required> Я согласен с условиями
+        </label>
+        <button type="submit">Отправить</button>
+        <p id="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <a href="tel:+79859566878">+7 985 956-68-78</a>
+      <a href="mailto:matvey@example.com">matvey@example.com</a>
+    </div>
+    <div class="info">
+      <a href="#">О нас</a>
+      <a href="#">Проекты</a>
+      <a href="#">Поддержать автора</a>
+    </div>
+    <div class="social">
+      <img src="img/Social-1.png" alt="S1">
+      <img src="img/Social-2.png" alt="S2">
+      <img src="img/Social-3.png" alt="S3">
+      <img src="img/Social.png"   alt="S4">
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

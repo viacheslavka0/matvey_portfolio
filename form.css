@@ -1,0 +1,111 @@
+/* секция формы */
+.form_section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e5e5e5;
+}
+
+/* контейнер формы */
+form {
+  background-color: #14213d;
+  color: #fdfcfa;
+  padding: 16px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* расстояние между полями */
+}
+
+/* заголовок формы */
+form h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
+/* метки */
+form label {
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* поля ввода и select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  padding: 8px 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background-color: white;
+  color: #fdfcfa;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* placeholder более светлый */
+input::placeholder {
+  color: rgb(82, 82, 82);
+}
+
+/* фокус на поле */
+input:focus,
+select:focus {
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #3714d1;
+  color: #14213d;
+}
+
+/* радиокнопки и чекбоксы */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* кнопка отправки */
+form button {
+  padding: 10px;
+  background-color: #fca311;
+  color: #14213d;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+form button:hover {
+  transform: scale(1.05);
+  background-color: #e5a10f;
+}
+
+/* статус отправки */
+#status {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* адаптив для мобильных */
+@media (max-width: 480px) {
+  .form_section {
+    padding: 12px;
+  }
+  form {
+    width: 100%;
+    padding: 12px;
+    gap: 10px;
+  }
+}

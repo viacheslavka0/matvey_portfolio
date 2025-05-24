@@ -1,0 +1,58 @@
+.rect{
+background-color: rgb(210, 72, 30);
+width: 200px;
+height: 200px;
+transition: background-color 0.5s; 
+}
+.rect:hover{
+    background-color: rgb(0, 183, 255);
+    width: 500px;
+    height: 100px;
+}
+button{
+width:fit-content;
+background-color: rgb(255, 255, 255);
+transition: all 0.5s;
+}
+button:hover{
+width: 100%;
+background-color: rgb(222, 184, 135);
+}
+
+.rect1{background-color: rgb(30, 210, 201);
+    width: 200px;
+    height: 200px;
+    animation: text_animation 5s infinite;
+}
+
+@keyframes test_animation{
+    0%{
+        left:0;
+        background-color: hsl(271, 76%, 53%);
+    }
+
+}
+.rect1{
+    background-color:rgb(89, 255, 114);
+    width: 200px;
+    height: 200px;
+    animation: test_animation 5s infinite alternate;
+    margin-left:0;
+}
+
+@keyframes test_animation {
+    0%{
+        margin-left:0;
+        background-color: rgb(89, 255, 114);
+    }
+
+    50%{
+        margin-left:50%;
+        background-color: rgb(206, 255, 31)
+    }
+
+    100%{
+        margin-left:100%;
+        background-color: aqua;
+    }
+}
