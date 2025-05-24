@@ -47,12 +47,11 @@ select {
   margin-top: 4px;
 }
 
-/* placeholder более светлый */
 input::placeholder {
   color: rgb(82, 82, 82);
 }
 
-/* фокус на поле */
+
 input:focus,
 select:focus {
   outline: none;
